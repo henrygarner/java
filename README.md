@@ -1,7 +1,7 @@
 Description
 ===========
 
-Installs the Java JDK using a script by Martin Wimpress ([https://github.com/flexiondotorg/oab-java6](https://github.com/flexiondotorg/oab-java6)) which is itself a wrapper around Debian packaging scripts by Janusz Dziemidowicz ([https://github.com/rraptorr/sun-java6](https://github.com/rraptorr/sun-java6), [https://github.com/rraptorr/oracle-java7](https://github.com/rraptorr/oracle-java7)).
+Installs the Oracle Java JDK using a script by Martin Wimpress ([https://github.com/flexiondotorg/oab-java6](https://github.com/flexiondotorg/oab-java6)) which is itself a wrapper around Debian packaging scripts by Janusz Dziemidowicz ([https://github.com/rraptorr/sun-java6](https://github.com/rraptorr/sun-java6), [https://github.com/rraptorr/oracle-java7](https://github.com/rraptorr/oracle-java7)).
 
 Requirements
 ============
