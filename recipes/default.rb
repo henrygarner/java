@@ -16,8 +16,8 @@
 # limitations under the License.
 
 remote_file "/tmp/oab-java.sh" do
-  source "https://raw.github.com/flexiondotorg/oab-java6/9250d866785a3e7a09a63740ab7fc8c2904e7ffd/oab-java.sh"
-  checksum "63e6d8e0b1550498a9ace56640915614ea8ebc09"
+  source "https://raw.github.com/flexiondotorg/oab-java6/2faf96772912aab2bbc3d4bf73e06983367fc832/oab-java.sh"
+  checksum "d7ff6943a0e75ea33fd1b4e7a41b77eb05d09cb2"
   action :create_if_missing
   mode "0755"
 end
