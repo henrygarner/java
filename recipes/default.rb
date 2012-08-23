@@ -1,7 +1,7 @@
 #
 # Author:: Henry Garner (<henry@henrygarner.com>)
 # Cookbook Name:: java
-# Attributes:: default 
+# Attributes:: default
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,8 +16,7 @@
 # limitations under the License.
 
 remote_file "/tmp/oab-java.sh" do
-  source "https://raw.github.com/flexiondotorg/oab-java6/2faf96772912aab2bbc3d4bf73e06983367fc832/oab-java.sh"
-  checksum "d7ff6943a0e75ea33fd1b4e7a41b77eb05d09cb2"
+  source "https://raw.github.com/flexiondotorg/oab-java6/master/oab-java.sh"
   action :create_if_missing
   mode "0755"
 end
