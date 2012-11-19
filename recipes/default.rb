@@ -24,7 +24,7 @@ end
 
 execute "oab-java.sh" do
   cwd "/tmp"
-  if node[:java][:jdk_version] == "7"
+  if node["java"]["jdk_version"] == "7"
     command "./oab-java.sh -7"
   else
     command "./oab-java.sh"
@@ -32,7 +32,7 @@ execute "oab-java.sh" do
   creates "/etc/apt/sources.list.d/oab.list"
 end
 
-if node[:java][:jdk_version] == "7"
+if node["java"]["jdk_version"] == "7"
   package "oracle-java7-jdk"
 else
   package "sun-java6-jdk"
