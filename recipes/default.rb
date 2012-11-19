@@ -16,8 +16,8 @@
 # limitations under the License.
 
 remote_file "#{Chef::Config[:file_cache_path]}/oab-java.sh" do
-  source "https://raw.github.com/flexiondotorg/oab-java6/2faf96772912aab2bbc3d4bf73e06983367fc832/oab-java.sh"
-  checksum "d7ff6943a0e75ea33fd1b4e7a41b77eb05d09cb2"
+  source "https://raw.github.com/flexiondotorg/oab-java6/master/oab-java.sh"
+  checksum "8394954bf1ded1157a05f76f31dca67b"
   action :create_if_missing
   mode "0755"
 end
