@@ -15,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-remote_file "/tmp/oab-java.sh" do
+remote_file "#{Chef::Config[:file_cache_path]}/oab-java.sh" do
   source "https://raw.github.com/flexiondotorg/oab-java6/2faf96772912aab2bbc3d4bf73e06983367fc832/oab-java.sh"
   checksum "d7ff6943a0e75ea33fd1b4e7a41b77eb05d09cb2"
   action :create_if_missing
