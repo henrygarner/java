@@ -25,9 +25,9 @@ end
 execute "oab-java.sh" do
   cwd "/tmp"
   if node["java"]["jdk_version"] == "7"
-    command "./oab-java.sh -7"
+    command "#{Chef::Config[:file_cache_path]}/oab-java.sh -7"
   else
-    command "./oab-java.sh"
+    command "#{Chef::Config[:file_cache_path]}/oab-java.sh"
   end
   creates "/etc/apt/sources.list.d/oab.list"
 end
