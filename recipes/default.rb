@@ -15,8 +15,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+execute "apt-get-update" do
+  command "apt-get update"
+  ignore_failure true
+  not_if do ::File.exist? '/tmp/oab-java.sh' end  
+end
+
 remote_file "/tmp/oab-java.sh" do
-  source "https://raw.github.com/flexiondotorg/oab-java6/master/oab-java.sh"
+  source node[:java][:oab_java_url]
   action :create_if_missing
   mode "0755"
 end

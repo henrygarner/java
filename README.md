@@ -15,6 +15,7 @@ Attributes
 ==========
 
 * `node["java"]["jdk_version"]` - Version of JDK you would like installed (`6` or `7`), default `6`.
+* `node["java"]["oab_java_url"]` - URL to oab-java.sh script. Default value is ok.
 
 Recipes
 =======
