@@ -16,3 +16,4 @@
 # limitations under the License.
 
 default[:java][:jdk_version] = "6"
+default[:java][:oab_java_url] = "https://raw.github.com/flexiondotorg/oab-java6/master/oab-java.sh"
